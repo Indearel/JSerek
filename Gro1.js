@@ -1,3 +1,7 @@
+//Zasody:
+//Mosz Pon dzisinć PLN-uf na kupno pyr
+//Jak wydosz Pon wincej to Pon przegrywosz
+//
 
 let Pyra = [
             "Arielle",
@@ -6,7 +10,6 @@ let Pyra = [
             "Iris",
             "Lord",
             "Orlik"
-
 ];
 
 var Arielle = 2.50;
@@ -16,17 +19,36 @@ var Irys = 1.70;
 var Lord = 3.30;
 var Orlik = 2.80;
 
+function createZakupy () {
+    let zakupy = [];
+    for (let PyraIdx = 0; PyraIdx < Pyra.length; PyraIdx++) {
+        zakupy.push(Pyra[PyraIdx];
+    }
+    return zakupy;
+}
 
-console.log("Kup Pany pyry!");
-console.log("Wybrol Pon take pyry:");
+function getNextPyra() {
+    return zakupy.shift();
+}
+
+let zakupy = createZakupy[ getNextPyra(), getNextPyra()];
+
+function myFunction(message) {
+    console.log (message);
+}
+
+myFunction("Kup Pan pyry!");
+myFunction("Wybrol Pan takom pyre");
+
 console.log(" " + Pyra[0]);
 console.log(" " + Pyra[1]);
+console.log(" " + Pyra[2]);
+console.log(" " + Pyra[5]);
 
-var cena = (Arielle + Denar); 
-
+var cena = (Arielle + Denar + Fresco + Orlik); 
 
 if (cena >= 10.00) {
-    console.log ("Przegral Pon")
+    console.log ("Przegral Pan")
     console.log ("Bulisz", cena, "i nic nie mosz");
     }
     
